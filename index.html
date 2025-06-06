@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bootstrap Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .blog-card-img {
+            height: 200px; /* Fixed height for blog card images */
+            object-fit: cover; /* Ensures image covers the area without distortion */
+        }
+        /* Fix for footer at the bottom */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures body takes at least full viewport height */
+        }
+        .content-wrapper {
+            flex-grow: 1; /* Allows content area to grow and push footer down */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">My Blog</a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Latest Blog Posts</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images (1).jpeg" class="card-img-top blog-card-img" alt="The Future of AI">
+                        <div class="card-body">
+                            <h5 class="card-title">The Future of AI</h5>
+                            <p class="card-text">Explore the exciting advancements and potential impacts of artificial intelligence on our daily lives and industries.</p>
+                            <a href="#blog-post-ai" class="btn btn-primary">Read More</a> </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="presentation6-240131040951-4caa1166-thumbnail.jpg" class="card-img-top blog-card-img" alt="Sustainable Living Tips">
+                        <div class="card-body">
+                            <h5 class="card-title">Sustainable Living Tips</h5>
+                            <p class="card-text">Learn practical ways to reduce your carbon footprint and contribute to a more sustainable future for everyone.</p>
+                            <a href="#blog-post-sustainability" class="btn btn-primary">Read More</a> </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="master-remote-work-with-these-four-tips-infographic-23072021.jpg" class="card-img-top blog-card-img" alt="Mastering Remote Work">
+                        <div class="card-body">
+                            <h5 class="card-title">Mastering Remote Work</h5>
+                            <p class="card-text">Discover effective strategies and tools to boost your productivity and maintain work-life balance while working remotely.</p>
+                            <a href="#blog-post-remotework" class="btn btn-primary">Read More</a> </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="the-art-of-photography-l.jpg" class="card-img-top blog-card-img" alt="The Art of Photography">
+                        <div class="card-body">
+                            <h5 class="card-title">The Art of Photography</h5>
+                            <p class="card-text">Unleash your creativity and learn the fundamentals of photography, from composition to editing techniques.</p>
+                            <a href="#blog-post-photography" class="btn btn-primary">Read More</a> </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images.jpeg" class="card-img-top blog-card-img" alt="Healthy Eating Habits">
+                        <div class="card-body">
+                            <h5 class="card-title">Healthy Eating Habits</h5>
+                            <p class="card-text">Transform your diet with simple, healthy eating habits that can improve your energy levels and overall well-being.</p>
+                            <a href="#blog-post-eating" class="btn btn-primary">Read More</a> </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images (2).jpeg" class="card-img-top blog-card-img" alt="Travel on a Budget">
+                        <div class="card-body">
+                            <h5 class="card-title">Travel on a Budget</h5>
+                            <p class="card-text">Discover smart tips and tricks for exploring the world without breaking the bank. Your next adventure awaits!</p>
+                            <a href="#blog-post-travel" class="btn btn-primary">Read More</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-auto"> <div class="container">
+            <p>&copy; 2025 My Bootstrap Blog. All rights reserved.</p>
+            <div class="mb-3">
+                <a href="#" class="text-white mx-2"><i class="bi bi-facebook fs-4"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-twitter fs-4"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-instagram fs-4"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-linkedin fs-4"></i></a>
+            </div>
+            <p>Made with <i class="bi bi-heart-fill text-danger"></i> by Your Name</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
